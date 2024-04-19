@@ -77,3 +77,16 @@ width-33 {
 		opacity: 1;
 	}
 }
+#changeColorBtn{
+    position: absolute;
+    top: 105%;
+    left: 47%;
+	height: 40px;
+	width: 100px;
+	border: 2px solid antiquewhite;
+	border-radius: 25px;
+	background-image: linear-gradient(40deg , burlywood , rgb(6, 6, 237));
+	font-family: cursive;
+	animation:  slideLeft 1s ease forwards;;
+    
+}
