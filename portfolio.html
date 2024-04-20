@@ -30,13 +30,13 @@ function showAlert() {
         <a href="#k9">My Services</a>
         <a href="#l3">Projects</a>
         <a href="#n3">Contact Me</a>
-       
+       <button id="to-bottom-btn">⬇</button>
       </nav>
     </div>
 
 
     <div class="hero">
-      
+      <section id="top"></section>
       <div class="banner-section">
         <div class="welcome">
           <button onclick="showAlert()" class="alert">Click Me!</button>
@@ -521,9 +521,28 @@ function showAlert() {
     </div>
     <div class="copyright">CopyRight © 2024 parvathysandeep. All Rights Reserved</div>
    
-  </div>
+  <button id="to-top-btn">⬆</button>
   <button id="changeColorBtn">Change theme</button>
-  
+ </div>
+  <section id="bottom"></section>
 </body>
-
+<script>
+  const toTopBtn = document.getElementById('to-top-btn');
+  const toBottomBtn = document.getElementById('to-bottom-btn');
+  
+  toTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  
+  toBottomBtn.addEventListener('click', () => {
+    const bottom = document.getElementById('bottom').offsetTop;
+    window.scrollTo({
+      top: bottom,
+      behavior: 'smooth'
+    });
+  });
+  </script>
 </html>
